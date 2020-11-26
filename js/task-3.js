@@ -5,7 +5,12 @@
 const findLongestWord = function(string) {
     let array;
     let longestWord;
-
+    // для меншого об'єму коду раджу відразу об'являти змінну і присвоювати їй значення
+    //тобто замість двох стрічок 
+    //let array;
+    //array = string.split(' ');
+    //пиши одну let array = string.split(' ');
+    // і тут правильніше не let array, а const array, бо масив в тебе не міняється за час виконання функції
     array = string.split(' ');
     longestWord = array[0];
     console.log(array.length);
