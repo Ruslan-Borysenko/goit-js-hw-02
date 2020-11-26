@@ -14,6 +14,8 @@ const findLongestWord = function(string) {
 
     for (let i = 0; i < array.length; i += 1) {
         if (longestWord.length >= array[i + 1].length) {
+            //виведи в консоль.лог array[i + 1] і зрозумієш в чому помилка. Треба просто array[i]. 
+            //Помилка може бути через те, що при останній ітерації циклу ти хочеш отримати елемент, якого не існує через array[i + 1] 
             continue;
             } else {
                 longestWord = array[i + 1];
