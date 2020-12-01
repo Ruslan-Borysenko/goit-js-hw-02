@@ -3,14 +3,26 @@
 // 3. Вивести результат множення
 
 const calculateEngravingPrice = function (message, pricePerWord) {
-    const wordArrayLength = (message.split(' ').length);
-    const result = pricePerWord * wordArrayLength;
-    console.log(result);
-}
+  const wordArrayLength = message.split(' ').length;
+  const result = pricePerWord * wordArrayLength;
+  return result;
+};
 
-calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10);
-calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 20); 
-calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40); 
-calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20); 
-
-
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    10,
+  ),
+);
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    20,
+  ),
+);
+console.log(
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
+);
+console.log(
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
+);
