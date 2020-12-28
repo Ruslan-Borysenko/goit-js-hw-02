@@ -2,7 +2,7 @@
 // 2. К-ть слів помножити на визначене число
 // 3. Вивести результат множення
 
-const calculateEngravingPrice = function (message, pricePerWord) {
+const calculateEngravingPrice = (message, pricePerWord) => {
   const wordArrayLength = message.split(' ').length;
   const result = pricePerWord * wordArrayLength;
   return result;

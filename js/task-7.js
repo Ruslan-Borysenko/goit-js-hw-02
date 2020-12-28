@@ -1,13 +1,12 @@
 let logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 //func 1
-const isLoginValid = function (login) {
+const isLoginValid = login => {
   const result = login.length >= 4 && login.length <= 16 ? true : false;
-  return result;
 };
 
 //func 2
-const isLoginUnique = function (allLogins, login) {
+const isLoginUnique = (allLogins, login) => {
   for (let i = 0; i < allLogins.length; i += 1) {
     if (allLogins[i] === login) {
       return false;
@@ -17,7 +16,7 @@ const isLoginUnique = function (allLogins, login) {
 };
 
 // func 3
-const addLogin = function (allLogins, login) {
+const addLogin = (allLogins, login) => {
   let result;
   // start func 1
   const loginValid = isLoginValid(login);

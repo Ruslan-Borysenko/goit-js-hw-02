@@ -2,7 +2,7 @@
 // 2. Додати "..."
 // 3. Повернути нову/стару версію
 
-const formatString = function (string) {
+const formatString = string => {
   if (string.length > 40) {
     const newString = string.slice(0, 40).concat('...');
     return newString;

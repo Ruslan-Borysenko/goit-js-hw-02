@@ -2,7 +2,7 @@
 // 2. Перевірити рядок на слова: spam, sale.
 // 3. Якщо знайшли слово - вивожу true в ін. випадку - false
 
-const checkForSpam = function (message) {
+const checkForSpam = message => {
   message = message.toLowerCase();
   const result =
     message.includes('spam') || message.includes('sale') ? 'true' : 'false';

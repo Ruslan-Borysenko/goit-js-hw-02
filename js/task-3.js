@@ -2,7 +2,7 @@
 // 2. Присвоїти в змінну "longestWord" перший елемент масиву
 // 3. Порівняти довжину з наступним елементом
 
-const findLongestWord = function (string) {
+const findLongestWord = string => {
   const array = string.split(' ');
   let longestWord = array[0];
 
