@@ -2,11 +2,14 @@
 // 2. Перевірити рядок на слова: spam, sale.
 // 3. Якщо знайшли слово - вивожу true в ін. випадку - false
 
-const checkForSpam = message => {
-  message = message.toLowerCase();
-  const result =
-    message.includes('spam') || message.includes('sale') ? 'true' : 'false';
-  return result;
+const checkForSpam = messageDiffCase => {
+  const message = messageDiffCase.toLowerCase();
+  // const result =
+  //   message.includes('spam') || message.includes('sale') ? 'true' : 'false';
+  // return result;
+  return message.includes('spam') || message.includes('sale')
+    ? 'true'
+    : 'false';
 };
 
 console.log(checkForSpam('Latest technology news')); // false

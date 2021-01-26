@@ -3,12 +3,13 @@
 // 3. Повернути нову/стару версію
 
 const formatString = string => {
-  if (string.length > 40) {
-    const newString = string.slice(0, 40).concat('...');
-    return newString;
-  } else {
-    return string;
-  }
+  // if (string.length > 40) {
+  //   const newString = string.slice(0, 40).concat('...');
+  //   return newString;
+  // } else {
+  //   return string;
+  // }
+  return string.length > 40 ? string.slice(0, 40).concat('...') : string;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
